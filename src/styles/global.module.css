@@ -1,0 +1,49 @@
+/* You can add global styles here if necessary */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Soft off-white background */
+    margin: 0; /* Reset default body margin */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .canadianRed {
+    background-color: #D8292F; /* Official Canadian red */
+    color: white;
+  }
+  
+  .canadianRedText {
+    color: #D8292F;
+  }
+  
+  .categoryTag {
+    background-color: #D8292F;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block; /* To allow margin/padding */
+  }
+  
+  .nav {
+    display: block;
+    text-align: center; /* Center the navigation items */
+    padding: 1rem 0; /* Add some padding around the nav */
+  }
+  
+  .nav a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 1em; /* Add some horizontal spacing between links */
+  }
+  
+  .nav a:hover {
+    text-decoration: underline; /* Underline on hover for better feedback */
+  }

@@ -1,0 +1,85 @@
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden;
+    border-top: 5px solid transparent; /* For theme color */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make cards the same height in a grid */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cardImageArea {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    color: #495057;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .cardImageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow content to take up remaining space */
+  }
+  
+  .handle {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    flex-grow: 1; /* Make info text take available vertical space */
+  }
+  
+  .websiteLink {
+    color: #D8292F;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: medium;
+    margin-top: auto; /* Push to the bottom */
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .websiteLink:hover {
+    text-decoration: underline;
+  }
+  
+  .noWebsite {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    margin-top: auto;
+  }
+  
+  .clamp2Lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }

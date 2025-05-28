@@ -1,0 +1,91 @@
+.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .filterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+  }
+  
+  .filterButton,
+  .randomButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 0.5rem;
+  }
+  
+  .filterButton {
+    background-color: white;
+    color: #495057;
+  }
+  
+  .filterButton.active,
+  .randomButton:hover {
+    background-color: #D8292F;
+    color: white;
+    border-color: #D8292F;
+    box-shadow: 0 2px 4px rgba(216, 41, 47, 0.3);
+  }
+  
+  .filterButton:not(.active):hover {
+    background-color: #f8f9fa;
+  }
+  
+  .randomButton {
+    background-color: #28a745; /* A distinct green for random button */
+    color: white;
+    border-color: #28a745;
+    margin-left: 0; /* Reset default margin */
+  }
+  
+  .listingsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  @media (min-width: 640px) {
+    .listingsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .listingsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .listingsGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .noResults {
+    text-align: center;
+    color: #6c757d;
+    padding: 2.5rem 0;
+  }
+  
+  .noResultsEmoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }

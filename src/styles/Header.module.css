@@ -1,0 +1,34 @@
+.header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .nav {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .nav a {
+    margin: 0 1em;
+    color: white; /* Assuming the header background is red */
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
