@@ -37,9 +37,9 @@
   
   .filterButton.active,
   .randomButton:hover {
-    background-color: #D8292F;
+    background-color: #000e51;
     color: white;
-    border-color: #D8292F;
+    border-color: #000e51;
     box-shadow: 0 2px 4px rgba(216, 41, 47, 0.3);
   }
   

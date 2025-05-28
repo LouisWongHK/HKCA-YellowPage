@@ -12,7 +12,7 @@ export default function Header() {
       <nav className={globalStyles.nav}>
         | <Link href="/"><span className="lang" data-lang="en">Home</span><span className="lang hidden" data-lang="zh">主頁</span></Link>
         | <Link href="/contact"><span className="lang" data-lang="en">Contact</span><span className="lang hidden" data-lang="zh">聯絡我們</span></Link>
-        | <Link href="/github"><span className="lang" data-lang="en">Github</span><span className="lang hidden" data-lang="zh">原始碼</span></Link>
+        | <Link href="https://github.com/LouisWongHK/HKCA-YellowPage"><span className="lang" data-lang="en">Github</span><span className="lang hidden" data-lang="zh">原始碼</span></Link> |
       </nav>
     </header>
   );
