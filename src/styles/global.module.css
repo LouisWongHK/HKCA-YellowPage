@@ -1,9 +1,4 @@
 /* You can add global styles here if necessary */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f8f9fa; /* Soft off-white background */
-    margin: 0; /* Reset default body margin */
-  }
   
   .container {
     max-width: 1200px;
