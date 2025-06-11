@@ -448,9 +448,13 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
+    setListings(listingsData[lang])
+    setCurrentFilter("全部")
+  }, [lang])
+  useEffect(() => {
     const uniqueCategories = [
       "全部",
-      ...new Set(listingsData[lang]?.map((item) => item.category_en).sort()),
+      ...new Set(listingsData[lang]?.map((item) => item.category_zh).sort()),
     ];
     setCategories(uniqueCategories);
   }, []);
