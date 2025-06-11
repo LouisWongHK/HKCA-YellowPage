@@ -2,7 +2,8 @@ import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 import globalStyles from '../styles/global.module.css';
 
-export default function Header() {
+export default function Header({changeLang}) {
+  // const { setLang } = this.propsS
   return (
     <header className={`${globalStyles.canadianRed} ${styles.header}`}>
       <div className={`${globalStyles.container} ${styles.container}`}>
@@ -14,6 +15,8 @@ export default function Header() {
         | <Link href="/contact"><span className="lang" data-lang="en">Contact</span><span className="lang hidden" data-lang="zh">聯絡我們</span></Link>
         | <Link href="https://github.com/LouisWongHK/HKCA-YellowPage"><span className="lang" data-lang="en">Github</span><span className="lang hidden" data-lang="zh">原始碼</span></Link> |
       </nav>
+        <button onClick={() => changeLang('zh')}>ZH</button>
+        <button onClick={() => changeLang('en')}>EN</button>
     </header>
   );
 }
