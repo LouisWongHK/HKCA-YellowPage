@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Head from "next/head";
 import Header from "../components/Header";
 import ListingCard from "../components/ListingCard";
@@ -8,7 +8,7 @@ import { useState, useEffect, useCallback } from "react";
 import { getSocialIcon, getContrastColor } from "../utils";
 import styles from "../styles/Home.module.css";
 import globalStyles from "../styles/global.module.css";
-import App from "../components/App";
+import '../styles/global.css';
 
 const listingsData = {
   zh: [
@@ -180,7 +180,7 @@ const listingsData = {
       category_zh: "攝影",
       website: "https://instagram.com/walkincanada",
       info_zh: "利用散步和遊走，了解加拿大社區、城市以至國家。",
-      icon_text: "在加散步",
+      icon_text: "攝",
       logo_url: "https://placehold.co/180x180/333333/FFFFFF?text=攝&font=inter", // Dark grey for photography
       theme_color_hex: "#333333",
     },
@@ -193,8 +193,8 @@ const listingsData = {
       website: "https://threads.net/@banffbeartravel",
       info_zh:
         "位於班夫及賈斯珀，提供小團體及私人旅遊服務，是探索加拿大洛磯山脈的理想選擇。",
-      icon_text: "banffbear",
-      logo_url: banffbear,
+      icon_text: "旅",
+      logo_url: null,
       theme_color_hex: "#17a2b8", // Info blue for travel
     },
     // 理財與個人成長
@@ -206,7 +206,7 @@ const listingsData = {
       website: "https://threads.net/@twosis_canada",
       info_zh:
         "位於多倫多，專注於分享加拿大理財、投資及省錢資訊，幫助香港移民適應當地生活並實現財務目標。",
-      icon_text: "Twosis",
+      icon_text: "財",
       logo_url: "https://placehold.co/180x180/00509E/FFFFFF?text=財&font=inter", // A trustworthy blue
       theme_color_hex: "#00509E",
     },
@@ -220,7 +220,7 @@ const listingsData = {
       info_zh:
         "另一個海外港人平台，專注於資源共享和社群建設，幫助香港人在加拿大建立聯繫。",
       icon_text: "源",
-      logo_url: referalah,
+      logo_url: null,
       theme_color_hex: "#6c757d", // Secondary grey
     },
   ],
@@ -240,9 +240,9 @@ const listingsData = {
     },
     {
       id: 2,
-      name_zh: "HongKonger Community Centre Toronto",
+      name_zh: "多倫多香港人社區中心 HongKonger Community Centre Toronto",
       handle: "@hkcctoronto",
-      category_zh: "Community Organization",
+      category_zh: "社區組織",
       website: "https://instagram.com/hkcctoronto",
       info_zh:
         "多倫多香港人社區中心期望為移居多倫多的香港人提供聚腳機會，保存在加港人的身分認同，發揚香港人互助精神；致力在加拿大的多元文化社會中，宣揚香港文化和價值；每月最後一個星期六有定期聚會。",
